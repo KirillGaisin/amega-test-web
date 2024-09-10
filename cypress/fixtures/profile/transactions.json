@@ -1,0 +1,56 @@
+{
+  "columns": [
+    {
+      "key": "col_columndefinitions_idcolumndefinition_76727b4a9f351b3a337ec8c0093c69c0",
+      "title": "Id"
+    },
+    {
+      "key": "col_columndefinitions_typecolumndefinition_9c7e77b7ef3be7070a82993434e3fced",
+      "title": "Type"
+    },
+    {
+      "key": "col_columndefinitions_statuscolumndefinition_17d237166a7009c7e998dc90a89836f5",
+      "title": "Status"
+    },
+    {
+      "key": "col_columndefinitions_paymentsystemcolumndefinition_0fb8af87a0a7f9539dea1effbfc347b2",
+      "title": "Payment System"
+    },
+    {
+      "key": "col_columndefinitions_fromloginsidcolumndefinition_05ae75999b2d3ef3efa545d6c65c8646",
+      "title": "Account"
+    },
+    {
+      "key": "col_columndefinitions_createdatcolumndefinition_0d2ad97b4b4572c9c2ccfc9fae717cca",
+      "title": "Created At"
+    },
+    {
+      "key": "col_columndefinitions_processedatcolumndefinition_fae7040c4582b3b1b69f6026a3f2bffe",
+      "title": "Processed At"
+    },
+    {
+      "key": "col_columndefinitions_amountcolumndefinition_4e7abf349e054a06248443bc6bf84e3c",
+      "title": "Amount"
+    },
+    {
+      "key": "col_columndefinitions_currencycolumndefinition_7c71eb024d5275e496bb18d8bb398b38",
+      "title": "Currency"
+    },
+    {
+      "key": "col_columndefinitions_canbecanceledcolumndefinition_848239698c741bff46f3ea72afa6c5e0",
+      "title": "Can Be Canceled"
+    },
+    {
+      "key": "col_columndefinitions_approvereasoncolumndefinition_6039f0459bf56633568c7780ac09affa",
+      "title": "Approve Reason"
+    },
+    {
+      "key": "col_columndefinitions_declinereasoncolumndefinition_f28b93f562fa38813d942afdc652cb5d",
+      "title": "Decline Reason"
+    }
+  ],
+  "rows": [],
+  "totals": [],
+  "canExportToCsv": true,
+  "canFilter": true
+}

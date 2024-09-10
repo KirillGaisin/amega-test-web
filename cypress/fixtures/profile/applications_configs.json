@@ -1,0 +1,946 @@
+[
+  {
+    "id": 19,
+    "title": "IB Application",
+    "category": "application",
+    "type": "ib",
+    "description": "",
+    "requiredForVerification": false,
+    "config": {
+      "applications.ib.step1": {
+        "title": "Contact & Business Details",
+        "fields": {
+          "preferredWayOfCommunication": {
+            "label": "Preferred way of communication",
+            "key": "preferredWayOfCommunication",
+            "dataType": "array",
+            "fieldType": "choice",
+            "description": "array of option values",
+            "required": true,
+            "choices": [
+              "phone",
+              "whatsapp",
+              "telegram"
+            ],
+            "choiceLabels": [
+              "Phone",
+              "WhatsApp",
+              "Telegram"
+            ],
+            "example": [
+              "option 1",
+              "option 2"
+            ],
+            "validators": [],
+            "multiple": true,
+            "help": null
+          },
+          "phone": {
+            "label": "Enter your Phone (with country code)",
+            "key": "phone",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": {
+              "requiredIf": {
+                "preferredWayOfCommunication": [
+                  "phone"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "whatsapp": {
+            "label": "Enter your WhatsApp Number (with country code)",
+            "key": "whatsapp",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": {
+              "requiredIf": {
+                "preferredWayOfCommunication": [
+                  "whatsapp"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "telegram": {
+            "label": "Enter your Telegram ID",
+            "key": "telegram",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": {
+              "requiredIf": {
+                "preferredWayOfCommunication": [
+                  "telegram"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "website": {
+            "label": "Website (if applicable)",
+            "key": "website",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": false,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "yearsOfExperienceAffiliate": {
+            "label": "Years of experience with forex brokers",
+            "key": "yearsOfExperienceAffiliate",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "experienceWithBrokers": {
+            "label": "Mention any forex brokers you've worked with before",
+            "key": "experienceWithBrokers",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": false,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "plannedNumberOfClientsMonthly": {
+            "label": "Number of clients you plan to refer monthly",
+            "key": "plannedNumberOfClientsMonthly",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "averageDepositSize": {
+            "label": "Average client deposit size",
+            "key": "averageDepositSize",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "clientNationalities": {
+            "label": "Client nationalities",
+            "key": "clientNationalities",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": "Expected nationalities of your referrals"
+          },
+          "preferredCommissionType": {
+            "label": "Preferred commission type",
+            "key": "preferredCommissionType",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": false,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "howDidYouFindOurPartership": {
+            "label": "How did you hear about our partnership program?",
+            "key": "howDidYouFindOurPartership",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": false,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": [],
+            "multiple": false,
+            "help": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 43,
+    "title": "Questionnaire v2",
+    "category": "application",
+    "type": "questionnaire",
+    "description": "<p>To comply with the regulations, we need to ask you a few questions to understand your background and goals better.<\/p>",
+    "requiredForVerification": true,
+    "config": {
+      "applications.questionnaire.step1": {
+        "title": "Personal & financial details",
+        "fields": {
+          "employmentStatus": {
+            "label": "Employment status",
+            "key": "employmentStatus",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "employed",
+              "unemployed",
+              "selfEmployed",
+              "retired",
+              "student"
+            ],
+            "choiceLabels": [
+              "Employed",
+              "Unemployed",
+              "Self employed",
+              "Retired",
+              "Student"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "industry": {
+            "label": "Industry",
+            "key": "industry",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "accounting",
+              "legal",
+              "administrationSecretarial",
+              "agricultureFarming",
+              "cateringHospitality",
+              "creativeMediaMarketingPRAdvertising",
+              "educationHealthPharmaceutical",
+              "informationTechnology",
+              "investmentServices",
+              "nonprofitOrganisation",
+              "propertyConstructionsArchitecture",
+              "publicServantSocialCare",
+              "retailWholesaleTradeManufacturing",
+              "telecommunications",
+              "transportLogisticsShippingServices",
+              "other"
+            ],
+            "choiceLabels": [
+              "Accounting",
+              "Legal",
+              "Administration\/Secretarial",
+              "Agriculture\/Farming",
+              "Catering\/Hospitality",
+              "Creative\/Media\/Marketing\/PR\/Advertising",
+              "Education Health\/Pharmaceutical",
+              "Information Technology",
+              "Investment Services",
+              "Non-profit organisation",
+              "Property\/Constructions\/Architecture",
+              "Public Servant\/Social Care",
+              "Retail\/Wholesale trade\/Manufacturing",
+              "Telecommunications",
+              "Transport\/Logistics\/Shipping Services",
+              "Other"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "industryOther": {
+            "label": "If you chose 'other', please clarify",
+            "key": "industryOther",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": {
+              "requiredIf": {
+                "industry": [
+                  "other"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "sourceOfFunds": {
+            "label": "Source of funds",
+            "key": "sourceOfFunds",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "salary",
+              "savingsInvestments",
+              "partnerParentFamily",
+              "benefitsBorrowing",
+              "privatePension",
+              "statePension",
+              "other"
+            ],
+            "choiceLabels": [
+              "Salary",
+              "Savings\/Investments",
+              "Partner\/Parent\/Family",
+              "Benefits\/Borrowing",
+              "Private Pension",
+              "State Pension",
+              "Other"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "sourceOfFundsOther": {
+            "label": "If you chose 'other', please clarify",
+            "key": "sourceOfFundsOther",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": {
+              "requiredIf": {
+                "sourceOfFunds": [
+                  "other"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "annualIncome": {
+            "label": "Total estimated annual income",
+            "key": "annualIncome",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "lessThan15000",
+              "from15000to24999",
+              "from25000to49999",
+              "from50000to99000",
+              "from100000to249000",
+              "250000orMore"
+            ],
+            "choiceLabels": [
+              "Less than $15,000",
+              "$15,000 - $24,999",
+              "$25,000 - $49,999",
+              "$50,000 - $99,999",
+              "$100,000 - $249,999",
+              "$250,000 or more"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "netWorth": {
+            "label": "Total estimated net worth, USD",
+            "key": "netWorth",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "lessThan15000",
+              "from15000to24999",
+              "from25000to49999",
+              "from50000to99000",
+              "from100000to249000",
+              "250000orMore"
+            ],
+            "choiceLabels": [
+              "Less than $15,000",
+              "$15,000 - $24,999",
+              "$25,000 - $49,999",
+              "$50,000 - $99,999",
+              "$100,000 - $249,999",
+              "$250,000 or more"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": "This is the value that is left after subtracting liabilities from assets. Assets include checking and savings account balances, the value of securities such as stocks or bonds, real property value, the market value of an automobile, etc. Examples of liabilities include debts like mortgages, credit card balances, student loans, and car loans. Liabilities can also include obligations that must be paid such as bills and taxes."
+          },
+          "cashAndLiquidAssets": {
+            "label": "What is the percentage of cash and liquid assets in your net worth?",
+            "key": "cashAndLiquidAssets",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "lessThan10",
+              "from10to25",
+              "from25to50",
+              "50orMore"
+            ],
+            "choiceLabels": [
+              "Less than 10%",
+              "From 10% to 25%",
+              "From 25% to 50%",
+              "More than 50%"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": "This is the value that is left after subtracting liabilities from assets. Assets include checking and savings account balances, the value of securities such as stocks or bonds, real property value, the market value of an automobile, etc. Examples of liabilities include debts like mortgages, credit card balances, student loans, and car loans. Liabilities can also include obligations that must be paid such as bills and taxes."
+          },
+          "usResident": {
+            "label": "Are you a US resident for tax purposes?",
+            "key": "usResident",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "yes",
+              "no"
+            ],
+            "choiceLabels": [
+              "Yes",
+              "No"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "tin": {
+            "label": "Do you have a Tax Identification Number (TIN)?",
+            "key": "tin",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "yes",
+              "no"
+            ],
+            "choiceLabels": [
+              "Yes",
+              "No"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "government": {
+            "label": "Are you a Politically Exposed Person? (PEP)",
+            "key": "government",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "yes",
+              "no"
+            ],
+            "choiceLabels": [
+              "Yes",
+              "No"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": "This status includes persons among heads of state, or those from national parliaments, national governments, regional governments, regional parliaments, senior management and the board of SOEs, mayors and members of local city councils. Check Yes, if you are among any of these categories."
+          },
+          "governmentDetails": {
+            "label": "If yes, please provide details",
+            "key": "governmentDetails",
+            "dataType": "string",
+            "fieldType": "text",
+            "description": "value as string",
+            "required": true,
+            "choices": null,
+            "choiceLabels": null,
+            "example": "some value",
+            "validators": {
+              "requiredIf": {
+                "government": [
+                  "yes"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          }
+        }
+      },
+      "applications.questionnaire.step2": {
+        "title": "Knowledge and experience",
+        "fields": {
+          "financialKnowledge": {
+            "label": "What is your financial knowledge regarding leveraged products?",
+            "key": "financialKnowledge",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "professionalCertificateOrExperience",
+              "academicDegree",
+              "tradingCourses",
+              "noFinancialKnowledge"
+            ],
+            "choiceLabels": [
+              "Professional certificate and professional experience",
+              "Academic degree in financial related fields",
+              "Trading Courses",
+              "I have no financial knowledge"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "experienceOverLastYear": {
+            "label": "Did you invest in any financial products over the past year?",
+            "key": "experienceOverLastYear",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "yes",
+              "no"
+            ],
+            "choiceLabels": [
+              "Yes",
+              "No"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "experienceOverLastYearStockETF": {
+            "label": "Over the last year, how many times have you invested in stocks and\/or ETFs?",
+            "key": "experienceOverLastYearStockETF",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "none",
+              "from1to10trades",
+              "from11to20trades",
+              "21orMore"
+            ],
+            "choiceLabels": [
+              "None",
+              "1-10 trades",
+              "11-20 trades",
+              "21 or more trades"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": {
+              "requiredIf": {
+                "experienceOverLastYear": [
+                  "yes"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "experienceOverLastYearCfdLeverage": {
+            "label": "Over the last year, how many times have you invested in Contracts for Difference or other Leverage Products?",
+            "key": "experienceOverLastYearCfdLeverage",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "none",
+              "from1to10trades",
+              "from11to20trades",
+              "21orMore"
+            ],
+            "choiceLabels": [
+              "None",
+              "1-10 trades",
+              "11-20 trades",
+              "21 or more trades"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": {
+              "requiredIf": {
+                "experienceOverLastYear": [
+                  "yes"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "experienceOverLastYearCrypto": {
+            "label": "Over the last year, how many times have you invested in Cryptocurrencies?",
+            "key": "experienceOverLastYearCrypto",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "none",
+              "from1to10trades",
+              "from11to20trades",
+              "21orMore"
+            ],
+            "choiceLabels": [
+              "None",
+              "1-10 trades",
+              "11-20 trades",
+              "21 or more trades"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": {
+              "requiredIf": {
+                "experienceOverLastYear": [
+                  "yes"
+                ]
+              }
+            },
+            "multiple": false,
+            "help": null
+          },
+          "knowledgeLeverage": {
+            "label": "The market moves by 3%. Which leverage would lead to the largest potential profit or loss?",
+            "key": "knowledgeLeverage",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "leverage1-2",
+              "leverage1-5",
+              "leverage1-20",
+              "leverage1-25",
+              "leverage1-33"
+            ],
+            "choiceLabels": [
+              "1:2",
+              "1:5",
+              "1:20",
+              "1:25",
+              "1:33"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "knowledgeRequiredMargin": {
+            "label": "What would be the required margin in EUR for 1 lot (100,000 EUR) of EUR\/USD, if your leverage is 1:100?",
+            "key": "knowledgeRequiredMargin",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "500EUR",
+              "1000EUR",
+              "2000EUR"
+            ],
+            "choiceLabels": [
+              "500 EUR",
+              "1000 EUR",
+              "2000 EUR"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "knowledgeLimitLosses": {
+            "label": "What type of closing order can you choose to help limit losses when trading?",
+            "key": "knowledgeLimitLosses",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "takeProfit",
+              "stopLoss",
+              "notExist"
+            ],
+            "choiceLabels": [
+              "A take profit order",
+              "A stop loss order",
+              "No such order exist"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "knowledgeMarginUsed": {
+            "label": "How much margin in EUR is required to buy 1,000,000 EUR with leverage of 1:50?",
+            "key": "knowledgeMarginUsed",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "10kEur",
+              "20kEur",
+              "100kEur",
+              "200kEur",
+              "1000kEur"
+            ],
+            "choiceLabels": [
+              "10,000 EUR",
+              "20,000 EUR",
+              "100,000 EUR",
+              "200,000 EUR",
+              "1,000,000 EUR"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "knowledgeStopOut": {
+            "label": "The market is moving against you and your account has a stop out level of 50%. Your account will be stopped out in which of the following situations?",
+            "key": "knowledgeStopOut",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "equity50ofUsedMargin",
+              "equityZero",
+              "equity50ofBalance",
+              "none"
+            ],
+            "choiceLabels": [
+              "The account equity reaches 50% of the used margin",
+              "The account equity reaches zero",
+              "The account equity reaches 50% of the account balance",
+              "None of the above"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          }
+        }
+      },
+      "applications.questionnaire.step3": {
+        "title": "Goals with Amega",
+        "fields": {
+          "planToDepositAmount": {
+            "label": "How much do you plan to deposit into an Amega account in USD over 1 year?",
+            "key": "planToDepositAmount",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "moreThan40k",
+              "from30kto40k",
+              "from20kto30k",
+              "from10kto20k",
+              "lessThan10k"
+            ],
+            "choiceLabels": [
+              "More than 40,000",
+              "From 30,000-40,000",
+              "From 20,000-30,000",
+              "From 10,000-20,000",
+              "Less than 10,000"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "depositChannel": {
+            "label": "How do you plan to deposit funds into your Amega account?",
+            "key": "depositChannel",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "bankTransfer",
+              "creditCard",
+              "eWallet"
+            ],
+            "choiceLabels": [
+              "Bank Transfer",
+              "Credit Card",
+              "eWallet"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          },
+          "assetsToTrade": {
+            "label": "What assets do you plan to trade on with Amega?",
+            "key": "assetsToTrade",
+            "dataType": "array",
+            "fieldType": "choice",
+            "description": "array of option values",
+            "required": true,
+            "choices": [
+              "currencies",
+              "stocks",
+              "indices",
+              "metals",
+              "energy",
+              "commodities"
+            ],
+            "choiceLabels": [
+              "Currencies",
+              "Stocks",
+              "Indices",
+              "Metals",
+              "Energy",
+              "Commodities"
+            ],
+            "example": [
+              "option 1",
+              "option 2"
+            ],
+            "validators": [],
+            "multiple": true,
+            "help": null
+          },
+          "tradingGoal": {
+            "label": "What best describes your primary goal for trading with us?",
+            "key": "tradingGoal",
+            "dataType": "string",
+            "fieldType": "choice",
+            "description": "option value as string",
+            "required": true,
+            "choices": [
+              "hedging",
+              "speculation",
+              "additionalIncome",
+              "shortTermReturns",
+              "capitalProtection"
+            ],
+            "choiceLabels": [
+              "Hedging",
+              "Speculative Trading",
+              "Additional Income",
+              "Short Term Returns",
+              "Capital Protection"
+            ],
+            "example": [
+              "option 1"
+            ],
+            "validators": [],
+            "multiple": false,
+            "help": null
+          }
+        }
+      }
+    }
+  }
+]
